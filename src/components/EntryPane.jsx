@@ -1,34 +1,35 @@
 import React from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+//const CSSTransitionGroup = React.addons.CSSTransitionGroup;
+//const TransitionGroup = React.addons.TransitionGroup;
 
-//import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
-const CSSTransitionGroup = React.addons.CSSTransitionGroup;
-const TransitionGroup = React.addons.TransitionGroup;
+import Pane from './Pane.jsx';
 
 class EntryPane extends React.Component {
-  constructor(props){
-    super(props)
+  constructor(props) {
+       super(props);
+       this.state = { visible: true };
+       this.handleClick = this.handleClick.bind(this)
+   }
 
-    this.state = { hidden: false }
+   handleClick() {
+     this.setState({ visible: ! this.state.visible });
+   }
 
-    this.revealMainPage = this.revealMainPage.bind(this);
-  }
+   render() {
+       return <div>
+           <CSSTransitionGroup transitionName="example">
+             <button onClick={this.handleClick}>{this.state.visible ? 'Slide up' : 'Slide down'}</button>
+             { this.state.visible ?
 
-  revealMainPage() {
-    this.setState({hidden: true})
-  }
-  render() {
-    return (
-      <div>
-        <div>
-          <h1>Big Quote</h1>
-          <h3>name</h3>
-        </div>
-        <div>
-          <button>Enter</button>
-        </div>
-      </div>
-    )
-  }
+              <Pane />
+
+               : null }
+           </CSSTransitionGroup>
+       </div>
+   }
 }
+
+
 
 export default EntryPane;
