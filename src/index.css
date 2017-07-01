@@ -38,3 +38,24 @@ body {
   top: 15%;
   color:purple;
 }
+
+.project-list {
+    width: 200px;
+    height: 100px;
+    background: grey;
+    margin-top: 10px;
+}
+
+.project-transition-enter {
+    height: 0px;
+}
+
+.project-transition-enter.project-transition-enter-active {
+    height: 100px;
+    -webkit-transition: height .3s ease;
+}
+
+.project-transition-leave.project-transition-leave-active {
+    height: 0px;
+    -webkit-transition: height .3s ease;
+}
