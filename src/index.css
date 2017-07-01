@@ -4,21 +4,22 @@ body {
   font-family: sans-serif;
 }
 
-.panel {
-    width: 200px;
-    height: 100px;
+.sliding-pane {
+    width: 100vw;
+    height: 80vh;
     background: green;
     margin-top: 10px;
 }
 
+.enter-button{
+  color: white;
+  cursor: pointer;
+
+}
 .example-enter {
     height: 0px;
 }
 
-.example-enter.example-enter-active {
-    height: 100px;
-    -webkit-transition: height .3s ease;
-}
 
 .example-leave.example-leave-active {
     height: 0px;

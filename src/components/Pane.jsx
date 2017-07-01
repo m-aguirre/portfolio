@@ -7,10 +7,13 @@ class Pane extends React.Component {
     this.state = {}
   }
 
+
   render(){
     return (
-      <div className='panel'>
+      <div className='sliding-pane'>
         <h1>Big Quote</h1>
+        <div className="enter-button" onClick={this.props.handleClick}>Enter</div>
+
       </div>
     )
   }

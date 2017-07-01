@@ -19,12 +19,7 @@ class EntryPane extends React.Component {
    render() {
        return <div>
            <CSSTransitionGroup transitionName="example">
-             <button onClick={this.handleClick}>{this.state.visible ? 'Slide up' : 'Slide down'}</button>
-             { this.state.visible ?
-
-              <Pane />
-
-               : null }
+             { this.state.visible ?  <Pane handleClick={this.handleClick}/> : null }
            </CSSTransitionGroup>
        </div>
    }
