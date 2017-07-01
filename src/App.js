@@ -4,6 +4,7 @@ import './App.css';
 
 import Header from './components/Header.jsx';
 import EntryPane from './components/EntryPane.jsx';
+import SideBar from './components/SideBar.jsx';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <EntryPane />
+        <SideBar />
       </div>
     );
   }

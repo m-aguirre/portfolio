@@ -4,7 +4,11 @@ body {
   font-family: sans-serif;
 }
 
+/*********** ENTRY PANE ************/
+
 .sliding-pane {
+    z-index: 10;
+    position: relative;
     width: 100vw;
     height: 80vh;
     background: green;
@@ -24,4 +28,13 @@ body {
 .example-leave.example-leave-active {
     height: 0px;
     -webkit-transition: height .3s ease;
+}
+
+/************* SIDE BAR ************/
+
+.side-bar{
+  position: fixed;
+  z-index: 1;
+  top: 15%;
+  color:purple;
 }
