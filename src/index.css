@@ -9,7 +9,7 @@ body {
 .header {
   background-color: grey;
   width: 100vw;
-  height: 10vh;
+  height: 13vh;
 }
 
 h1{
@@ -46,7 +46,8 @@ h1{
 .side-bar{
   position: fixed;
   z-index: 1;
-  top: 15%;
+  top: 13%;
+  background-color: #7de8c9;
   color:purple;
   width: 17vw;
   height: 80vh;
