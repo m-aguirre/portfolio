@@ -4,6 +4,17 @@ body {
   font-family: sans-serif;
 }
 
+/*********** HEADER **********/
+
+.header {
+  background-color: grey;
+  width: 100vw;
+  height: 10vh;
+}
+
+h1{
+  margin-top: 0;
+}
 /*********** ENTRY PANE ************/
 
 .sliding-pane {
@@ -37,6 +48,9 @@ body {
   z-index: 1;
   top: 15%;
   color:purple;
+  width: 17vw;
+  height: 80vh;
+
 }
 
 .project-list {
@@ -58,4 +72,29 @@ body {
 .project-transition-leave.project-transition-leave-active {
     height: 0px;
     -webkit-transition: height .3s ease;
+}
+
+/******** CONTENT PANES *********/
+
+.content-pane {
+  width:70vw;
+  height: 80vh;
+  background: #8eafe2;
+  position: relative;
+  right: -17vw;
+  top: -28vh;
+}
+
+.content-transition-enter {
+  width: 0px;
+}
+
+.content-transition-enter.content-transition-enter-active {
+    width: 500px;
+    -webkit-transition: width .3s ease;
+}
+
+.content-transition-leave.content-transition-leave-active {
+    width: 0px;
+    -webkit-transition: width .3s ease;
 }
