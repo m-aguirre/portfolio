@@ -10,11 +10,16 @@ h1{
 /*********** HEADER **********/
 
 .header {
-  background-color: #eaefee;
+  background-color: #8b9e92;
   width: 100vw;
   height: 15vh;
 }
 
+.header h2 {
+  color: white;
+  font-size: 200%;
+  padding: 3%
+}
 .name-h2 {
   margin-top: 0;
   float: left;
@@ -96,20 +101,23 @@ h1{
   position: fixed;
   z-index: 1;
   top: 15%;
-  background-color: #7de8c9;
-  color:purple;
+  background-color: #81c4b2;
+  color: white;
   width: 18vw;
   height: 80vh;
 
 }
 
 .project-list {
-    width: 15vw;
-    height: 100px;
-    background: grey;
+    width: 18vw;
+    height: 27vh;
+    background-color: #8b9e92;
     margin-top: 10px;
 }
 
+.rule {
+  width: 70%;
+}
 .project-transition-enter {
     height: 0px;
 }

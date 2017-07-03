@@ -12,7 +12,9 @@ class ProjectList extends React.Component {
     return (
       <div className="project-list">
         <h3 className="project-item">Face2Face</h3>
+        <hr className="rule" />
         <h3 className="project-item">TripMates</h3>
+        <hr className="rule" />
         <h3 className="project-item">Buzz</h3>
       </div>
     )
