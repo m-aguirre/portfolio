@@ -104,15 +104,29 @@ h1{
   background-color: #81c4b2;
   color: white;
   width: 18vw;
-  height: 80vh;
+  height: 85vh;
 
 }
 
 .project-list {
     width: 18vw;
-    height: 27vh;
+    height: 30vh;
     background-color: #8b9e92;
     margin-top: 10px;
+    overflow: hidden;
+}
+
+.project-item{
+  width: 18vw;
+  height: 5vh;
+  margin-top: 5px;
+  padding-top: 2%;
+}
+
+.project-item:hover {
+  cursor: pointer;
+  background-color: black;
+  transition: all 0.4s ease-in-out;
 }
 
 .rule {
@@ -123,13 +137,13 @@ h1{
 }
 
 .project-transition-enter.project-transition-enter-active {
-    height: 100px;
-    -webkit-transition: height .3s ease;
+    height: 30vh;
+    -webkit-transition: height .4s ease;
 }
 
 .project-transition-leave.project-transition-leave-active {
     height: 0px;
-    -webkit-transition: height .3s ease;
+    -webkit-transition: height .4s ease;
 }
 
 /******** CONTENT PANES *********/
@@ -139,6 +153,7 @@ h1{
   height: 85vh;
   background: #8eafe2;
   position: relative;
+  overflow: hidden;
   right: -18vw;
   top: -28vh;
 }
@@ -165,3 +180,36 @@ h1{
     width: 0px;
     -webkit-transition: width .7s ease;
 }
+
+/********* ART PANE ***********/
+
+.art-content-container {
+  width: 80vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.slideshow-container {
+  margin: auto;
+  width: 40vw;
+  height: 30vh;
+  background-color: black;
+}
+
+
+/********* BIO PANE **********/
+
+.bioContainer {
+  width: 80vw;
+  height: 30vh;
+  overflow: hidden;
+}
+
+/*.content-pane h2 {
+  color: white;
+  overflow: hidden;
+}
+.content-pane p {
+  overflow: hidden;
+  color: black;
+}*/

@@ -6,12 +6,26 @@ class ArtPane extends React.Component {
 
     this.state = { visible: false}
 
+    this.delayDisplay = this.delayDisplay.bind(this);
+  }
+
+  delayDisplay(){
+    setTimeout(() => {
+      var artContent = document.getElementsByClassName("art-content-container")[0];
+      artContent.style.display = artContent.style.display == "none" ? "block" : "none";
+      this.setState({visible: ! this.state.visible})
+    }, 700);
   }
 
   render() {
+
     return (
       <div className="content-pane">
-        <h1> Art Content</h1>
+        <div className="art-content-container">
+          <h1> Art Content</h1>
+          <div className="slideshow-container">
+          </div>
+        </div>
       </div>
     )
   }

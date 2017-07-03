@@ -10,7 +10,11 @@ class BioPane extends React.Component {
   render() {
     return (
       <div className="content-pane">
-        <h2>Bio Content</h2>
+        <div className="bioContainer">
+          <h2>Bio Content</h2>
+          <p> Here is some info about me</p>
+          <p> and more info ...</p>    
+        </div>
       </div>
     )
   }
