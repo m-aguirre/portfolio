@@ -11,7 +11,12 @@ class Header extends React.Component {
       <div className="header">
         <h2 className="name-h2">Matthew Aguirre</h2>
         <div className="portfolio-photo"></div>
-        <div className="links-container"></div>
+        <div className="links-container">
+          <ul>
+            <li>github</li>
+            <li>linkedin</li>
+          </ul>
+        </div>
       </div>
     )
   }

@@ -28,6 +28,13 @@ h1{
   background-image: url('./images/portfolio-photo.jpg');
   background-size: contain;
 }
+
+.links-container {
+  float: right;
+  position: relative;
+  top: -13vh;
+  margin-right: 2.5%
+}
 /*********** ENTRY PANE ************/
 
 .sliding-pane {
@@ -132,9 +139,9 @@ h1{
   width:82vw;
   height: 85vh;
   background: #8eafe2;
-  position: relative;
-  right: -18vw;
-  top: -48.3vh;
+  position: absolute;
+  top: 0;
+  left:100%
 }
 
 .content-transition-enter {
