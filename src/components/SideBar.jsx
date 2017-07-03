@@ -5,14 +5,22 @@ import ProjectList from './ProjectList.jsx';
 import ProjectsPane from './ProjectsPane.jsx';
 import ArtPane from './ArtPane.jsx';
 import BioPane from './BioPane.jsx';
+import Buzz from './projects/Buzz.jsx';
+import Face2Face from './projects/Face2Face.jsx';
+import Tripmates from './projects/Tripmates.jsx';
+
 
 class SideBar extends React.Component {
   constructor(props){
     super(props)
 
     this.state = {ProjectListVisible: false,
+                  ProjectPaneVisible: false,
                   ArtPaneVisible: false,
-                  BioPaneVisible: false
+                  BioPaneVisible: false,
+                  BuzzVisible: false,
+                  Face2FaceVisible: false,
+                  TripmatesVisible: false
                   }
 
     this.handleProjectListClick = this.handleProjectListClick.bind(this);
@@ -23,10 +31,12 @@ class SideBar extends React.Component {
   handleProjectListClick() {
     if(this.state.BioPaneVisible || this.state.ArtPaneVisible) {
       setTimeout(() => {
-        this.setState({ProjectListVisible: ! this.state.ProjectListVisible})
+        this.setState({ProjectListVisible: ! this.state.ProjectListVisible,
+                       ProjectPaneVisible: ! this.state.ProjectPaneVisible})
       }, 700);
     } else {
-      this.setState({ProjectListVisible: ! this.state.ProjectListVisible});
+      this.setState({ProjectListVisible: ! this.state.ProjectListVisible,
+                     ProjectPaneVisible: ! this.state.ProjectPaneVisible});
     }
     this.setState({ ArtPaneVisible: false,
                     BioPaneVisible: false});
@@ -41,6 +51,7 @@ class SideBar extends React.Component {
       this.setState({ArtPaneVisible: ! this.state.ArtPaneVisible});
     }
     this.setState({ ProjectListVisible: false,
+                    ProjectPaneVisible: false,
                     BioPaneVisible: false});
   }
 
@@ -52,7 +63,8 @@ class SideBar extends React.Component {
     } else {
       this.setState({BioPaneVisible: ! this.state.BioPaneVisible});
     }
-    this.setState({ ProjectListVisible: false ,
+    this.setState({ ProjectListVisible: false,
+                    ProjectPaneVisible: false,
                     ArtPaneVisible: false});
   }
 
@@ -68,7 +80,7 @@ class SideBar extends React.Component {
           <h2 className="side-bar-item" onClick={this.handleBioClick}>Bio</h2>
         </div>
         <CSSTransitionGroup transitionName="content-transition">
-          { this.state.ProjectListVisible ? <ProjectsPane /> : null }
+          { this.state.ProjectPaneVisible ? <ProjectsPane /> : null }
           { this.state.ArtPaneVisible ?  <ArtPane /> : null }
           { this.state.BioPaneVisible ? <BioPane /> : null }
         </CSSTransitionGroup>
