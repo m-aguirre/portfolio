@@ -21,21 +21,39 @@ class SideBar extends React.Component {
   }
 
   handleProjectListClick() {
-    this.setState({ ProjectListVisible: ! this.state.ProjectListVisible,
-                    ArtPaneVisible: false,
+    if(this.state.BioPaneVisible || this.state.ArtPaneVisible) {
+      setTimeout(() => {
+        this.setState({ProjectListVisible: ! this.state.ProjectListVisible})
+      }, 700);
+    } else {
+      this.setState({ProjectListVisible: ! this.state.ProjectListVisible});
+    }
+    this.setState({ ArtPaneVisible: false,
                     BioPaneVisible: false});
   }
 
   handleArtClick() {
-      this.setState({ ProjectListVisible: false,
-                      ArtPaneVisible: ! this.state.ArtPaneVisible,
-                      BioPaneVisible: false});
+    if(this.state.BioPaneVisible || this.state.ProjectListVisible) {
+      setTimeout(() => {
+        this.setState({ArtPaneVisible: ! this.state.ArtPaneVisible})
+      }, 700);
+    } else {
+      this.setState({ArtPaneVisible: ! this.state.ArtPaneVisible});
+    }
+    this.setState({ ProjectListVisible: false,
+                    BioPaneVisible: false});
   }
 
   handleBioClick() {
+    if(this.state.ArtPaneVisible || this.state.ProjectListVisible) {
+      setTimeout(() => {
+        this.setState({BioPaneVisible: ! this.state.BioPaneVisible})
+      }, 700);
+    } else {
+      this.setState({BioPaneVisible: ! this.state.BioPaneVisible});
+    }
     this.setState({ ProjectListVisible: false ,
-                    ArtPaneVisible: false,
-                    BioPaneVisible: ! this.state.BioPaneVisible});
+                    ArtPaneVisible: false});
   }
 
   render() {
