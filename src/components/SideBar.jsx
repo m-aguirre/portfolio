@@ -2,6 +2,7 @@ import React from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 import ProjectList from './ProjectList.jsx';
+import ProjectsPane from './ProjectsPane.jsx';
 import ArtPane from './ArtPane.jsx';
 import BioPane from './BioPane.jsx';
 
@@ -49,6 +50,7 @@ class SideBar extends React.Component {
           <h2 className="side-bar-item" onClick={this.handleBioClick}>Bio</h2>
         </div>
         <CSSTransitionGroup transitionName="content-transition">
+          { this.state.ProjectListVisible ? <ProjectsPane /> : null }
           { this.state.ArtPaneVisible ?  <ArtPane /> : null }
           { this.state.BioPaneVisible ? <BioPane /> : null }
         </CSSTransitionGroup>

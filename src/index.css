@@ -4,6 +4,9 @@ body {
   font-family: sans-serif;
 }
 
+h1{
+  margin-top: 0;
+}
 /*********** HEADER **********/
 
 .header {
@@ -12,8 +15,18 @@ body {
   height: 15vh;
 }
 
-h1{
+.name-h2 {
   margin-top: 0;
+  float: left;
+}
+
+.portfolio-photo {
+  width: 14vh;
+  height: 14vh;
+  border-radius: 50%;
+  margin: auto;
+  background-image: url('./images/portfolio-photo.jpg');
+  background-size: contain;
 }
 /*********** ENTRY PANE ************/
 
@@ -28,15 +41,46 @@ h1{
     margin-top: 0;
 }
 
-.enter-button{
+.big-quote {
   color: white;
-  cursor: pointer;
+  padding-top: 20%;
+  animation-name: fadein;
+  animation-duration: 2.5s;
+}
 
+.name {
+  color: white;
+  padding-top: 5%;
+  animation-name: fadein;
+  animation-duration: 3.5s;
+}
+
+.enter-button {
+  color: white;
+  font-size: 24px;
+  padding-top: 15%;
+  cursor: pointer;
+  animation-name: fadein;
+  animation-duration: 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .entry-pane-leave.entry-pane-leave-active {
     height: 0px;
-    -webkit-transition: height .3s ease;
+    -webkit-transition: height .5s ease;
 }
 
 /************* SIDE BAR ************/
@@ -53,7 +97,7 @@ h1{
 }
 
 .project-list {
-    width: 200px;
+    width: 15vw;
     height: 100px;
     background: grey;
     margin-top: 10px;
@@ -76,12 +120,21 @@ h1{
 /******** CONTENT PANES *********/
 
 .content-pane {
-  width:70vw;
-  height: 80vh;
+  width:82vw;
+  height: 85vh;
   background: #8eafe2;
   position: relative;
-  right: -17vw;
+  right: -18vw;
   top: -28vh;
+}
+
+.projects-content-pane {
+  width:82vw;
+  height: 85vh;
+  background: #8eafe2;
+  position: relative;
+  right: -18vw;
+  top: -48.3vh;
 }
 
 .content-transition-enter {
@@ -89,11 +142,11 @@ h1{
 }
 
 .content-transition-enter.content-transition-enter-active {
-    width: 500px;
-    -webkit-transition: width .3s ease;
+    width: 82vw;
+    -webkit-transition: width .7s ease;
 }
 
 .content-transition-leave.content-transition-leave-active {
     width: 0px;
-    -webkit-transition: width .3s ease;
+    -webkit-transition: width .7s ease;
 }
