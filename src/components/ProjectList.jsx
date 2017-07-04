@@ -11,7 +11,7 @@ class ProjectList extends React.Component {
   render() {
     return (
       <div className="project-list">
-        <h3 className="project-item">Face2Face</h3>
+        <h3 className="project-item" onClick={this.props.handleItemClick}>Face2Face</h3>
         <hr className="rule" />
         <h3 className="project-item">TripMates</h3>
         <hr className="rule" />

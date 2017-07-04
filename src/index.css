@@ -163,10 +163,21 @@ h1{
   height: 85vh;
   background: #8eafe2;
   position: absolute;
+  z-index: -1;
   top: 0;
   left:100%
 }
 
+.project-content-pane {
+  width:82vw;
+  height: 85vh;
+  background: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  right: -18vw;
+  top: -61.3vh;
+}
 .content-transition-enter {
   width: 0px;
 }

@@ -24,8 +24,10 @@ class SideBar extends React.Component {
                   }
 
     this.handleProjectListClick = this.handleProjectListClick.bind(this);
+    this.handleProjectListItemClick = this.handleProjectListItemClick.bind(this);
     this.handleArtClick = this.handleArtClick.bind(this);
     this.handleBioClick = this.handleBioClick.bind(this);
+    
   }
 
   handleProjectListClick() {
@@ -40,6 +42,10 @@ class SideBar extends React.Component {
     }
     this.setState({ ArtPaneVisible: false,
                     BioPaneVisible: false});
+  }
+
+  handleProjectListItemClick() {
+    this.setState({Face2FaceVisible: ! this.state.Face2FaceVisible});
   }
 
   handleArtClick() {
@@ -74,13 +80,15 @@ class SideBar extends React.Component {
         <div>
           <h2 className="side-bar-item" onClick={this.handleProjectListClick}>Projects</h2>
           <CSSTransitionGroup transitionName="project-transition">
-            { this.state.ProjectListVisible ?  <ProjectList handleClick={this.handleProjectListClick}/> : null }
+            { this.state.ProjectListVisible ?  <ProjectList handleClick={this.handleProjectListClick}
+                                                            handleItemClick={this.handleProjectListItemClick}/> : null }
           </CSSTransitionGroup>
           <h2 className="side-bar-item" onClick={this.handleArtClick}>Art</h2>
           <h2 className="side-bar-item" onClick={this.handleBioClick}>Bio</h2>
         </div>
         <CSSTransitionGroup transitionName="content-transition">
           { this.state.ProjectPaneVisible ? <ProjectsPane /> : null }
+          { this.state.Face2FaceVisible ? <Face2Face /> : null }
           { this.state.ArtPaneVisible ?  <ArtPane /> : null }
           { this.state.BioPaneVisible ? <BioPane /> : null }
         </CSSTransitionGroup>
