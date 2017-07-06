@@ -13,9 +13,9 @@ class ProjectList extends React.Component {
       <div className="project-list">
         <h3 className="project-item" onClick={this.props.handleItemClick}>Face2Face</h3>
         <hr className="rule" />
-        <h3 className="project-item">TripMates</h3>
+        <h3 className="project-item" onClick={this.props.handleTripmatesClick}>TripMates</h3>
         <hr className="rule" />
-        <h3 className="project-item">Buzz</h3>
+        <h3 className="project-item" onClick={this.props.handleBuzzClick}>Buzz</h3>
       </div>
     )
   }

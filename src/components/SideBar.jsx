@@ -25,12 +25,16 @@ class SideBar extends React.Component {
 
     this.handleProjectListClick = this.handleProjectListClick.bind(this);
     this.handleProjectListItemClick = this.handleProjectListItemClick.bind(this);
+    this.handleTripmatesClick = this.handleTripmatesClick.bind(this);
+    this.handleBuzzClick = this.handleBuzzClick.bind(this);
     this.handleArtClick = this.handleArtClick.bind(this);
     this.handleBioClick = this.handleBioClick.bind(this);
-    
+    this.clearProjects = this.clearProjects.bind(this);
+
   }
 
   handleProjectListClick() {
+    this.clearProjects();
     if(this.state.BioPaneVisible || this.state.ArtPaneVisible) {
       setTimeout(() => {
         this.setState({ProjectListVisible: ! this.state.ProjectListVisible,
@@ -45,11 +49,47 @@ class SideBar extends React.Component {
   }
 
   handleProjectListItemClick() {
-    this.setState({Face2FaceVisible: ! this.state.Face2FaceVisible});
+    if(this.state.TripmatesVisible || this.state.BuzzVisible) {
+      this.clearProjects();
+      setTimeout(() => {
+        this.setState({Face2FaceVisible: ! this.state.Face2FaceVisible});
+      }, 700);
+    } else {
+      this.setState({Face2FaceVisible: ! this.state.Face2FaceVisible});
+    }
+  }
+
+  handleTripmatesClick() {
+    if(this.state.Face2FaceVisible || this.state.BuzzVisible) {
+      this.clearProjects();
+      setTimeout(() => {
+        this.setState({TripmatesVisible: ! this.state.TripmatesVisible});
+      }, 700);
+    } else {
+      this.setState({TripmatesVisible: ! this.state.TripmatesVisible});
+    }
+  }
+
+  handleBuzzClick() {
+    if(this.state.Face2FaceVisible || this.state.TripmatesVisible) {
+      this.clearProjects();
+      setTimeout(() => {
+        this.setState({BuzzVisible: ! this.state.BuzzVisible});
+      }, 700);
+    } else {
+      this.setState({BuzzVisible: ! this.state.BuzzVisible});
+    }
+  }
+
+  clearProjects() {
+    this.setState({Face2FaceVisible: false,
+                   BuzzVisible: false,
+                   TripmatesVisible: false})
   }
 
   handleArtClick() {
-    if(this.state.BioPaneVisible || this.state.ProjectListVisible) {
+   this.clearProjects();
+   if(this.state.BioPaneVisible || this.state.ProjectListVisible) {
       setTimeout(() => {
         this.setState({ArtPaneVisible: ! this.state.ArtPaneVisible})
       }, 700);
@@ -62,6 +102,7 @@ class SideBar extends React.Component {
   }
 
   handleBioClick() {
+    this.clearProjects();
     if(this.state.ArtPaneVisible || this.state.ProjectListVisible) {
       setTimeout(() => {
         this.setState({BioPaneVisible: ! this.state.BioPaneVisible})
@@ -81,7 +122,9 @@ class SideBar extends React.Component {
           <h2 className="side-bar-item" onClick={this.handleProjectListClick}>Projects</h2>
           <CSSTransitionGroup transitionName="project-transition">
             { this.state.ProjectListVisible ?  <ProjectList handleClick={this.handleProjectListClick}
-                                                            handleItemClick={this.handleProjectListItemClick}/> : null }
+                                                            handleItemClick={this.handleProjectListItemClick}
+                                                            handleTripmatesClick={this.handleTripmatesClick}
+                                                            handleBuzzClick={this.handleBuzzClick} /> : null }
           </CSSTransitionGroup>
           <h2 className="side-bar-item" onClick={this.handleArtClick}>Art</h2>
           <h2 className="side-bar-item" onClick={this.handleBioClick}>Bio</h2>
@@ -89,6 +132,8 @@ class SideBar extends React.Component {
         <CSSTransitionGroup transitionName="content-transition">
           { this.state.ProjectPaneVisible ? <ProjectsPane /> : null }
           { this.state.Face2FaceVisible ? <Face2Face /> : null }
+          { this.state.BuzzVisible ? <Buzz /> : null }
+          { this.state.TripmatesVisible ? <Tripmates /> : null }
           { this.state.ArtPaneVisible ?  <ArtPane /> : null }
           { this.state.BioPaneVisible ? <BioPane /> : null }
         </CSSTransitionGroup>
