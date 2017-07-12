@@ -177,6 +177,7 @@ h1{
   z-index: 5;
   left: 100%;
   top: 0;
+  overflow-y: scroll;
 }
 .content-transition-enter {
   width: 0px;
@@ -190,6 +191,28 @@ h1{
 .content-transition-leave.content-transition-leave-active {
     width: 0px;
     -webkit-transition: width .7s ease;
+}
+
+/********* Face2Face PANE *****/
+
+.project-image {
+  width: 50vh;
+  height: 50vh;
+  margin: auto;
+
+  background-size: contain;
+}
+
+#f2f-homescreen {
+  background-image: url('./images/F2FHomeScreen.png');
+}
+
+#f2f-matchlist {
+  background-image: url('./images/F2FMatchList.png');
+}
+
+#f2f-messages {
+  background-image: url('./images/F2FMessages.png');
 }
 
 /********* ART PANE ***********/
