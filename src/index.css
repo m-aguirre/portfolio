@@ -38,7 +38,27 @@ h1{
   float: right;
   position: relative;
   top: -13vh;
-  margin-right: 2.5%
+  margin-right: 2.5%;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+#github-link {
+  width: 10vw;
+  height: 5vh;
+  background-image: url('./images/github-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#linkedin-link {
+  width: 10vw;
+  height: 5vh;
+  background-image: url('./images/linkedin-vector-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*********** ENTRY PANE ************/
 
@@ -101,7 +121,7 @@ h1{
   position: fixed;
   z-index: 1;
   top: 15%;
-  background-color: #81c4b2;
+  background-color: #87e7eb;
   color: white;
   width: 18vw;
   height: 85vh;
@@ -179,6 +199,11 @@ h1{
   left: 100%;
   top: 0;
   overflow-y: scroll;
+}
+
+.project-content-container {
+  width: 80vw;
+  overflow: hidden;
 }
 .content-transition-enter {
   width: 0px;

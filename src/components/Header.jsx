@@ -13,8 +13,8 @@ class Header extends React.Component {
         <div className="portfolio-photo"></div>
         <div className="links-container">
           <ul>
-            <li>github</li>
-            <li>linkedin</li>
+            <li id="linkedin-link"><a href="https://www.linkedin.com/in/matthew-aguirre/"></a></li>
+            <li id="github-link"><a href="https://github.com/m-aguirre"></a></li>
           </ul>
         </div>
       </div>

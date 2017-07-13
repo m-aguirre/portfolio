@@ -11,6 +11,7 @@ class TripMates extends React.Component {
     return (
       <div className="project-content-pane">
         <h1>Tripmates</h1>
+        <h2> Coming soon! </h2>
       </div>
     )
   }
