@@ -171,7 +171,8 @@ h1{
 .project-content-pane {
   width:82vw;
   height: 85vh;
-  background: black;
+  background: #f2f7e6;
+  color: black;
   position: absolute;
   overflow: hidden;
   z-index: 5;
@@ -199,12 +200,16 @@ h1{
   width: 50vh;
   height: 50vh;
   margin: auto;
-
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
 #f2f-homescreen {
   background-image: url('./images/F2FHomeScreen.png');
+}
+#f2f-video-chat {
+  background-image: url('./images/F2F-VideoChat.png');
+  height: 38vh;
 }
 
 #f2f-matchlist {
@@ -213,6 +218,7 @@ h1{
 
 #f2f-messages {
   background-image: url('./images/F2FMessages.png');
+  height: 40vh;
 }
 
 /********* ART PANE ***********/
