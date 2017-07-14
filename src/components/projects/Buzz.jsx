@@ -19,10 +19,11 @@ class Buzz extends React.Component {
         <p>Buzz was built responsibly with React, Node/Express, and Postgresql</p>
 
         <div className="project-image" id="buzz-home"></div>
-        <p>Description</p>
+        <p>Neighborhood Selection</p>
         <div className="project-image" id="buzz-vibes"></div>
-        <p>Description</p>
+        <p>Bar Category Selection</p>
         <div className="project-image" id="buzz-happy-hours"></div>
+        <p>List of Happy Hours in selected neighborhood</p>
         </div>
       </div>
     )

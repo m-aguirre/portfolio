@@ -78,8 +78,10 @@ li {
     overflow: hidden;
 }
 
+
 .big-quote {
   color: white;
+  font-weight: bold; 
   padding-top: 13%;
   animation-name: fadein;
   animation-duration: 2.5s;
@@ -94,7 +96,8 @@ li {
 
 .enter-button {
   color: white;
-  font-size: 150%;
+  font-size: 175%;
+  font-weight: bold;
   padding-top: 5%;
   cursor: pointer;
   animation-name: fadein;
@@ -227,7 +230,9 @@ li {
 
 .project-content-container {
   width: 80vw;
+  height: 80vh;
   overflow: hidden;
+  overflow-y: scroll;
 }
 .content-transition-enter {
   width: 0px;
@@ -341,19 +346,9 @@ li {
 
 /********* BIO PANE **********/
 
-.bioContainer {
-  margin: auto;
-  width: 70vw;
-  height: 80vh;
-  overflow: hidden;
-  overflow-y: scroll;
-}
 
-/*.content-pane h2 {
-  color: white;
-  overflow: hidden;
+#bio-container p {
+  width: 70vw;
+  margin: auto;
+  margin-top: 3%;
 }
-.content-pane p {
-  overflow: hidden;
-  color: black;
-}*/

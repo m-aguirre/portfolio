@@ -10,7 +10,7 @@ class BioPane extends React.Component {
   render() {
     return (
       <div className="content-pane">
-        <div className="bioContainer">
+        <div className="project-content-container" id="bio-container">
           <h2>Bio</h2>
             <p>Matthew was born in San Francisco and lived in the Bay Area until he joined the United States Air Force
           at the age of 19.  His service took him across the country for training prior to being stationed in Germany for four years.
