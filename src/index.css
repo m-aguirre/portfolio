@@ -269,6 +269,29 @@ li {
   background-image: url('./images/F2FMessages.png');
   height: 40vh;
 }
+
+/********* Tripmates PANE *****/
+
+#tm-home1 {
+  background-image: url('./images/tm-home1.png');
+}
+
+#tm-home2 {
+  background-image: url('/images/tm-home2.png');
+}
+
+#tm-trip1 {
+  background-image: url('./images/tm-trip1.png');
+}
+
+#tm-trip2 {
+  background-image: url('./images/tm-trip2.png');
+}
+
+#tm-trip-invite {
+  background-image: url('./images/tm-trip-invite.png');
+}
+
 /********* Buzz PANE **********/
 
 #buzz-home {
@@ -297,10 +320,10 @@ li {
 
 .slideshow-container {
   margin: auto;
-  margin-top: 8%;
-  width: 70vw;
-  height: 55vh;
-  background-color: black;
+  margin-top: 5%;
+  width: 60vw;
+  height: 60vh;
+  background-image: url('./images/oil-skip-limit.png');
 }
 
 

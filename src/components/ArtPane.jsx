@@ -12,7 +12,7 @@ class ArtPane extends React.Component {
     return (
       <div className="content-pane">
         <div className="project-content-container">
-          <h1> Art Content</h1>
+          <h1> Art </h1>
           <p>My visual art is mostly in oil paint and graphite. Here is a small selection
           of work I've done in various styes over that last couple years</p>
           <div className="slideshow-container">
