@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1{
@@ -21,7 +23,8 @@ h1{
   padding: 3%
 }
 .name-h2 {
-  margin-top: 0;
+  padding-top: 2%;
+  padding-left: 2%;
   float: left;
 }
 
@@ -114,6 +117,16 @@ li {
     height: 0px;
     -webkit-transition: height .5s ease;
 }
+/************* WELCOME PANE ********/
+
+.welcome-pane {
+  margin: auto;
+  margin-top: 5%;
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+  left: 10vw;
+}
 
 /************* SIDE BAR ************/
 
@@ -172,10 +185,10 @@ li {
   width:82vw;
   height: 85vh;
   background: #8eafe2;
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  right: -18vw;
-  top: -28vh;
+  left: 100%;
+  top: 0;
 }
 
 .projects-content-pane {
@@ -245,7 +258,22 @@ li {
   background-image: url('./images/F2FMessages.png');
   height: 40vh;
 }
+/********* Buzz PANE **********/
 
+#buzz-home {
+  background-image: url('./images/buzz-home.png');
+  height: 30vh;
+}
+
+#buzz-vibes {
+  background-image: url('./images/buzz-vibes.png');
+  height: 30vh;
+}
+
+#buzz-happy-hours {
+  background-image: url('./images/buzz-happy-hours.png');
+  height: 30vh;
+}
 /********* ART PANE ***********/
 
 .art-content-container {
