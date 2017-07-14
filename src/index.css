@@ -274,22 +274,31 @@ li {
 
 #tm-home1 {
   background-image: url('./images/tm-home1.png');
+
+  width: 70vw;
 }
 
 #tm-home2 {
   background-image: url('/images/tm-home2.png');
+
 }
 
 #tm-trip1 {
   background-image: url('./images/tm-trip1.png');
+
+  width: 70vw;
 }
 
 #tm-trip2 {
   background-image: url('./images/tm-trip2.png');
+  margin-top: 0;
+  width: 70vw;
 }
 
 #tm-trip-invite {
   background-image: url('./images/tm-trip-invite.png');
+  width: 70vw;
+
 }
 
 /********* Buzz PANE **********/
@@ -324,6 +333,8 @@ li {
   width: 60vw;
   height: 60vh;
   background-image: url('./images/oil-skip-limit.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 
