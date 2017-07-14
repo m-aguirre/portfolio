@@ -15,9 +15,8 @@ class ArtPane extends React.Component {
           <h1> Art </h1>
           <p>My visual art is mostly in oil paint and graphite. Here is a small selection
           of work I've done in various styes over that last couple years</p>
-          <div className="slideshow-container">
-            <p>Coming Soon!</p>
-          </div>
+          <p>More work to be added soon!</p>
+          <div className="slideshow-container"></div>
         </div>
       </div>
     )

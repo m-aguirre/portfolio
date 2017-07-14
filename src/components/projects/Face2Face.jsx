@@ -17,7 +17,7 @@ class Face2Face extends React.Component {
           Users are paired with each other for video chat based on matching criteria such as gender and age.
           After chatting, users are given the chance to like or reject whomever they just talked to.
           If a mutual like occurs, they are able to continue chatting via text in the app.</p>
-        <p>Face2Face was written with love in React, Node, and Postgresql with video chat powered by the Twilio API and Socket.io for text chat.
+        <p>Face2Face was built with love in React, Node/Express, and Postgresql (including Bookshelf/Knex) with video chat powered by the Twilio API and Socket.io for real-time text chat.
         For a more in-depth look at the app, check out <a href="http://face2faceapp-staging.herokuapp.com/">Face2Face</a> and to view the source code,
         head to <a href="https://github.com/Face-2-Face/Face2Face">Github</a>.</p>
         </div>

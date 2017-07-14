@@ -325,12 +325,13 @@ li {
     width: 70vw;
     height: 70vh;
     overflow: hidden;
+    overflow-y: scroll;
 }
 
 .slideshow-container {
   margin: auto;
   margin-top: 5%;
-  width: 60vw;
+  width: 45vw;
   height: 60vh;
   background-image: url('./images/oil-skip-limit.png');
   background-repeat: no-repeat;
@@ -341,9 +342,11 @@ li {
 /********* BIO PANE **********/
 
 .bioContainer {
-  width: 80vw;
-  height: 30vh;
+  margin: auto;
+  width: 70vw;
+  height: 80vh;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 /*.content-pane h2 {
