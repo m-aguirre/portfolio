@@ -16,9 +16,9 @@ class WelcomePane extends React.Component {
         San Francisco.  My educational background is full of an assortment of
         math and science classes and I love taking on tough technical challenges.
         I enjoy taking a user-centric approach to developing intuitive and good looking
-        applications that satisfy my inner artist.</p>
-      <p>Feel free to contact me with questions, and note that I am currently available
-      for select freelance projects <a href="mailto:matthew.p.aguirre@gmail.com">matthew.p.aguirre@gmail.com</a> </p>
+        applications, as well as exploring new technologies that make my apps
+        more powerful and feature-rich.</p>
+      <p>Feel free to contact me with questions <a href="mailto:matthew.p.aguirre@gmail.com">matthew.p.aguirre@gmail.com</a> </p>
       </div>
     )
   }
