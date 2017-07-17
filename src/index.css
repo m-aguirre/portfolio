@@ -27,7 +27,7 @@ h1{
   padding-top: 2%;
   padding-left: 2%;
   float: left;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 .portfolio-photo {
@@ -45,6 +45,7 @@ h1{
   top: -13vh;
   margin-right: 2.5%;
 }
+
 
 li {
   list-style: none;
@@ -149,6 +150,8 @@ li {
 
 }
 
+
+
 .side-bar-item:hover {
   cursor: pointer;
   background-color: #595a6d;
@@ -158,7 +161,7 @@ li {
 .project-list {
     width: 18vw;
     height: 25vh;
-    font-size: 2vh;
+    font-size: 1.8vh;
     background-color: #9aa099;
     margin-top: 10px;
     overflow: hidden;
@@ -256,7 +259,7 @@ li {
 
 .project-image {
   width: 50vh;
-  height: 50vh;
+  height: 45vh;
   margin: auto;
   background-repeat: no-repeat;
   background-size: contain;
@@ -280,6 +283,14 @@ li {
 }
 
 /********* Tripmates PANE *****/
+
+.tripmates-image {
+  width: 100%;
+  height: 35vh;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 #tm-home1 {
   background-image: url('./images/tm-home1.png');
