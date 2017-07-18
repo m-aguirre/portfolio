@@ -16,6 +16,7 @@ h1{
   color: black;
   width: 100vw;
   height: 15vh;
+  position: relative;
 }
 
 .header h2 {
@@ -23,6 +24,7 @@ h1{
   font-size: 200%;
 
 }
+
 .name-h2 {
   padding-top: 2%;
   padding-left: 2%;
@@ -46,11 +48,11 @@ h1{
   margin-right: 2.5%;
 }
 
-
 li {
   list-style: none;
   cursor: pointer;
 }
+
 #github-link {
   width: 10vw;
   height: 5vh;
@@ -141,7 +143,7 @@ li {
 .side-bar{
   position: fixed;
   z-index: 1;
-  top: 15%;
+  top: 15vh;
   background-color: #abc9bd;
   color: black;
   width: 18vw;
@@ -161,7 +163,7 @@ li {
 .project-list {
     width: 18vw;
     height: 25vh;
-    font-size: 1.8vh;
+    font-size: 1.7vh;
     background-color: #9aa099;
     margin-top: 10px;
     overflow: hidden;
