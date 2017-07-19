@@ -243,6 +243,12 @@ li {
   overflow: hidden;
   overflow-y: scroll;
 }
+
+/*.project-content-container {
+  margin: auto;
+  width: 70vw;
+}*/
+
 .content-transition-enter {
   width: 0px;
 }
