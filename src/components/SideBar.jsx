@@ -20,7 +20,8 @@ class SideBar extends React.Component {
                   BioPaneVisible: false,
                   BuzzVisible: false,
                   Face2FaceVisible: false,
-                  TripmatesVisible: false
+                  TripmatesVisible: false,
+                  AnyPaneVisible: false
                   }
 
     this.handleProjectListClick = this.handleProjectListClick.bind(this);

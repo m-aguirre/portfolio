@@ -24,7 +24,7 @@ class BioPane extends React.Component {
             </p>
             <p>
             I believe in working hard and always performing to the best of one’s abilities.  My commitment to excellence has been acknowledged many times,
-             and my list of awards includes: Pu Mu Epsilon National Mathematics Honor Society Induction, USF Dean’s Honor List, Squadron Airman of the Year and Airman of the Quarter,
+             and my list of awards includes: Pi Mu Epsilon National Mathematics Honor Society Induction, USF Dean’s Honor List, Squadron Airman of the Year and Airman of the Quarter,
               USAF Combat Action Medal, US Army Commendation Medal, US Army Achievement Medal, USAF Achievement Medal
 
 
